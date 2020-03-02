@@ -1,0 +1,506 @@
+body {
+	background-color: black;
+	padding-top: 50px;
+	color: #87807b;
+}
+pre {
+	white-space: pre-wrap;
+	white-space: -moz-pre-wrap;
+	white-space: -pre-wrap;
+	white-space: -o-pre-wrap;
+	word-wrap: break-word;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.5;
+	color: #87807b;
+}
+
+.noPadding {
+	padding: 0px;
+}
+/*Top Nav*/
+@media only screen and (max-width: 768px) {
+	.top-nav{
+		text-align: left !important;
+	}
+}
+.top-nav {
+	background-color: black;
+}
+.top-nav a {
+    text-decoration: none;
+    color: #87807b;
+    font-weight: 500;
+}
+.top-nav a p {
+    margin: 0px;
+    font-size: 20px;
+    padding: 10px 14px;
+}
+.topnav-right {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	display: inline-block;
+	padding: 0px 0px 0px 0px;
+}
+
+.profilePicDiv {
+	width: 31px;
+	height: 31px;
+	position: absolute;
+	top: 10px;
+    left: -20px;
+	overflow: hidden;
+	border-radius: 50%;
+	border: solid white 1px;
+}
+.dropdownBtn{
+	text-align: right;
+}
+
+.dropdown {
+	text-align: left;
+	min-width: 144px;
+	width: auto;
+	position: absolute;
+	padding-left: 0px;
+	top: 48px;
+	right: 0px;
+	background-color: black;
+	overflow: hidden;
+	height: 0px;
+	transition: all 0.6s;
+}
+.dropdown li {
+	display: block !important;
+}
+
+
+.fa-caret-down {
+	transition: all 0.6s;
+}
+.dropdownHover:hover .dropdown {
+	height: 110px !important;
+}
+.dropdownHover li a:hover{
+	text-decoration: underline;
+}
+.dropdownHover:hover .fa-caret-down {
+	transform: rotate(180deg);
+}
+
+/*Carousel*/
+.addImgBtn{
+	position: absolute;
+	top: 23px;
+	right: 15px;
+	color: #87807b;
+	text-decoration: underline;
+	font-size: 18px;
+	z-index: 1020;
+}
+
+
+/*BLOG*/
+.container{
+	position: relative;
+}
+.icon {
+	max-width: 150px;
+	margin: 0 auto;
+	display: block;
+}
+
+.date {
+	font-size: 13px;
+}
+
+@media (min-width: 1600px) {
+	.container {
+		max-width: 1500px;
+	}
+}
+.blogCreateBtn{
+	position: absolute;
+	top: 23px;
+	right: 15px;
+	color: #87807b;
+	text-decoration: underline;
+	font-size: 18px;
+}
+.blogCreateBtn:hover{
+	color: white;
+}
+.blogDeleteBtn{
+	color: #87807b;
+	text-decoration: underline;
+	font-size: 18px;
+}
+.blogDeleteBtn:hover{
+	color: white;
+}
+.blogDeleteBtn:hover{
+	color: white;
+}
+.blogEditBtn{
+	color: #87807b;
+	text-decoration: underline;
+	float: right;
+	font-size: 18px;
+}
+.blogEditBtn:hover{
+	color: white;
+}
+@keyframes edit {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+.blogEditBtn:hover .cogAni {
+	animation: edit 5s linear infinite;
+}
+
+
+
+/*BLOG Edit Page*/
+
+.blogEditTitle {
+	margin-top: 120px;
+	margin-bottom: 60px;
+	margin-bottom: 60px;
+	font-size: 30px;
+}
+
+.blogEditForm {
+	display: inline-block;
+	text-align: center;
+	padding-left: 10px;
+}
+
+.blogEditLeft {
+	display: inline-block;
+	text-align: left;
+}
+
+.blogEditRight {
+	display: inline-block;
+	text-align: left;
+	vertical-align: top;
+	padding-top: 4px;
+}
+.blogEditRight .box{
+	width: 300px;
+}
+
+.blogEditRight .boxGuide {
+	margin-bottom: 20px;
+	vertical-align: top;
+}
+
+.blogEditRight .Submit {
+	margin-top: 30px;
+	margin-bottom: 0px;
+}
+
+.blogEditRight a {
+	color: white;
+}
+
+.blogEditRight a:hover {
+	text-decoration: underline;
+}
+
+@media only screen and (max-width: 530px) {
+	.blogEditLeft {
+		display: block;
+		padding-left: 20px;
+		margin-bottom: 20px;
+	}
+	.blogEditForm {
+		margin-top: 0px;
+	}
+}
+
+/*Login Page*/
+
+.loginTopMargin {
+	margin-top: 65px;
+	height: 100%;
+}
+
+.administratorAccount {
+	padding-left: 24px;
+	font-size: 16px;
+	margin-top: 90px;
+}
+
+.bold {
+	font-weight: bold;
+	text-decoration: underline;
+	font-style: italic;
+	font-size: 18px;
+}
+
+.loginCenter {
+	width: 300px;
+	border: solid 1px #87807b;
+	display: block;
+	margin-top: 100px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+.loginTitle {
+	background-color: #87807b;
+	color: black;
+	padding: 5px;
+}
+
+.loginFormDiv {
+	margin: 20px;
+}
+
+.boxGuide {
+	color: #87807b;
+	width: 72px;
+	display: inline-block;
+	margin: 10px 0px;
+}
+
+.box {
+	background-color: black;
+	border: 0px;
+	border-bottom: 2px solid #87807b;
+	color: white;
+	font-size: 16px;
+	font-family: "times new roman";
+}
+
+.Submit {
+	box-sizing: border-box;
+	background-color: black;
+	border: 2px solid #87807b;
+	color: #87807b;
+	font-size: 16px;
+	font-family: "times new roman";
+	cursor: pointer;
+	margin-bottom: 20px;
+}
+
+.Submit:hover {
+	background-color: #87807b;
+	color: black;
+}
+
+.loginCenter a {
+	color: #87807b;
+	text-decoration: underline;
+}
+
+.loginError {
+	font-size: 13px;
+	color: red;
+	margin-top: 10px;
+}
+
+/*Register Page*/
+
+.registerTitle {
+	margin-top: 120px;
+	margin-bottom: 60px;
+	margin-bottom: 60px;
+	font-size: 30px;
+}
+
+.registerForm {
+	display: inline-block;
+	text-align: left;
+}
+
+.registerLeft {
+	display: inline-block;
+}
+
+.registerRight {
+	display: inline-block;
+	text-align: center;
+	vertical-align: top;
+	padding-top: 4px;
+}
+
+.registerRight .boxGuide {
+	margin-bottom: 16px;
+}
+
+.registerRight .Submit {
+	margin-top: 30px;
+	margin-bottom: 0px;
+}
+
+.registerRight a {
+	color: #87807b;
+}
+
+.registerRight a:hover {
+	text-decoration: underline;
+}
+
+@media only screen and (max-width: 530px) {
+	.registerLeft {
+		display: block;
+		padding-left: 20px;
+		margin-bottom: 20px;
+	}
+	.registerForm {
+		margin-top: 0px;
+	}
+}
+
+
+/*Upload Image*/
+
+#nodrag {
+	margin: 0px;
+	text-align: center;
+}
+
+#dropContainer {
+	border: 1px solid white;
+	min-height: 100px;
+	min-width: 100px;
+	width: 200px;
+	height: 200px;
+	overflow: hidden;
+	position: relative;
+	cursor: pointer;
+	background-color: black;
+}
+
+#dropContainer p {
+	width: 100%;
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	margin: 0px;
+}
+
+#previewimg {
+	display: none;
+	width: 100%;
+	z-index: 99;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%)translateY(-50%);
+}
+
+
+/*Profile Page*/
+
+.profilePosition {
+	padding-top: 200px;
+	text-align: center;
+}
+
+.profileTitle {
+	margin-bottom: 40px;
+}
+
+.profileLeft {
+	display: inline-block;
+	text-align: left;
+}
+
+.profileRight {
+	display: inline-block;
+	text-align: left;
+	vertical-align: top;
+	padding-left: 30px;
+}
+
+.profileRight p {
+	margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 530px) {
+	.profilePosition {
+		padding-top: 100px;
+	}
+	.profileTitle {
+		margin-bottom: 40px;
+	}
+	.profileLeft {
+		display: inline-block;
+		text-align: left;
+	}
+	.profileRight {
+		display: inline-block;
+		text-align: left;
+		padding-left: 30px;
+	}
+	.profileRight p {
+		margin-bottom: 30px;
+	}
+}
+
+
+/*Profile Edit Page*/
+
+.profileEditTitle {
+	margin-top: 120px;
+	margin-bottom: 60px;
+	margin-bottom: 60px;
+	font-size: 30px;
+}
+
+.profileEditForm {
+	display: inline-block;
+	text-align: left;
+}
+
+.profileEditLeft {
+	display: inline-block;
+}
+
+.profileEditRight {
+	display: inline-block;
+	text-align: center;
+	vertical-align: top;
+	padding-top: 4px;
+}
+
+.profileEditRight .boxGuide {
+	margin-bottom: 20px;
+}
+
+.profileEditRight .Submit {
+	margin-top: 30px;
+	margin-bottom: 0px;
+}
+
+.profileEditRight a {
+	color: white;
+}
+
+.profileEditRight a:hover {
+	text-decoration: underline;
+}
+
+@media only screen and (max-width: 530px) {
+	.profileEditLeft {
+		display: block;
+		padding-left: 20px;
+		margin-bottom: 20px;
+	}
+	.profileEditForm {
+		margin-top: 0px;
+	}
+}
