@@ -7,10 +7,10 @@
 		$query = "Gushi,cn";
 	};
 	if (isset($_GET["unit"])) {
-			$units = $_GET["unit"];
-		} else {
-			$units = "metric";
-		};
+		$units = $_GET["unit"];
+	} else {
+		$units = "metric";
+	};
 //	$query = "Gushi,cn";
 //	$units = "metric";
 	

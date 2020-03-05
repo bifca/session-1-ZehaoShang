@@ -1,6 +1,28 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-	header("location: index.php?city=" . $_POST["city"] . "&unit=" . $_POST["unit"]);
+	$query = $_POST["city"];
+	$units = $_POST["unit"];
+	//Connect and communicate with OpenWeather API.
+		//Forecast Weather
+	$api_key = "2db3d04bbc8fa973d3b4444cb2dfe6f9";
+	$curl = curl_init();
+	curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
+	curl_setopt($curl, CURLOPT_URL, "http://api.openweathermap.org/data/2.5/forecast?units=".$units."&q=".$query."&appid=".$api_key);
+	$forecastWeather = json_decode(curl_exec($curl));
+		//Current Weather
+	$curl2 = curl_init();
+	curl_setopt($curl2, CURLOPT_RETURNTRANSFER, 1);
+	curl_setopt($curl2, CURLOPT_URL, "http://api.openweathermap.org/data/2.5/weather?units=".$units."&q=".$query."&appid=".$api_key);
+	$currentWeather = json_decode(curl_exec($curl2));
+	
+	if (empty($currentWeather->message) AND ($forecastWeather->message == 0)){
+		header("location: index.php?city=" . $_POST["city"] . "&unit=" . $_POST["unit"]);
+	}else{
+		$error='<p style="color:red;">Wrong City or Country Name</p>';
+	};
+	
+
+	
 };
 ?>
 
@@ -32,6 +54,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 			<datalist id="citys">
 			<option value="Gushi,China"><option value="Wuhan,China"><option value="Shanghai,China"><option value="Beijing,China"><option value="Tokyo,Japan"><option value="London,UK"><option value="Birmingham,UK"><option value="New York,USA"><option value="Los Angeles,USA"><option value="Sydney,Australia">
 			</datalist>
+			<?php if(!empty($error)){echo $error;};?>
 			<br>
 			<p>
 				Temperature Unit Format:
