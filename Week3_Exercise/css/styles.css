@@ -1,0 +1,104 @@
+body {
+	background-color: #dcdcdc;
+}
+
+.show_case {
+	position: relative;
+}
+
+@media only screen and (min-width: 450px) {
+	.show_case {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translateX(-50%)translateY(-50%);
+	}
+}
+
+p {
+	margin: 0px;
+}
+
+.homeBtn {
+	color: black;
+}
+
+.homeBtn:hover {
+	text-decoration: none;
+	color: #ec6e4c;
+}
+.changeBtn {
+	color: black;
+	text-decoration: underline;
+	padding-top: 11px;
+}
+.changeBtn:hover {
+	color: #ec6e4c;
+}
+.currentTitle {
+	margin: 0px;
+	font-weight: 200;
+}
+
+.temperature {
+	font-size: 24px;
+}
+
+.hoursWeather {
+	height: 344px;
+	overflow: auto;
+	position: relative;
+}
+
+@media only screen and (max-width: 576px) {
+	h2 {
+		padding-left: 15px;
+		padding-top: 20px;
+	}
+	.changeBtn {
+		position: relative;
+		margin-top: 20px;
+	}
+	.forecastTitle {
+		padding-left: 15px;
+	}
+}
+
+.forecastTitle {
+	margin: 30px 0px 0px 0px;
+}
+
+.forecastTime {
+	margin: 0px;
+	width: 128px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+.changeForm{
+	position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translateX(-50%)translateY(-50%);
+}
+.changeForm h5{
+	margin-bottom: 30px;
+	width: 300px;
+}
+.changeForm input{
+	margin-bottom: 15px;
+}
+.changeForm p{
+	margin-bottom: 10px;
+}
+.submitBtn{
+	background-color: #ec6e4c;
+    border-color: #ec6e4c;
+}
+
+.submitBtn:hover {
+    color: #212529;
+    background-color: #ef9982;
+    border-color: #ef9982;
+}
