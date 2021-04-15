@@ -43,7 +43,7 @@ require 'config.php';
 									$api_key = "917b32a0";
 									$curl = curl_init();
 									curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
-									curl_setopt($curl, CURLOPT_URL, "http://www.omdbapi.com/?apikey=df1323af&i=".$row['imdbID']);
+									curl_setopt($curl, CURLOPT_URL, "http://www.omdbapi.com/?apikey=d83bf7b4&i=".$row['imdbID']);
 									$filmInfo = json_decode(curl_exec($curl));
 							echo '<p class="polt">'.$filmInfo->Plot.'</p>';
 							echo '<p><strong>Year: </strong>'.$filmInfo->Year.'</p>';

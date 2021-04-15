@@ -6,7 +6,7 @@ if (isset($_GET["id"])) {
 $api_key = "917b32a0";
 $curl = curl_init();
 curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
-curl_setopt($curl, CURLOPT_URL, "http://www.omdbapi.com/?apikey=df1323af&plot=full&i=" . $imdbID);
+curl_setopt($curl, CURLOPT_URL, "http://www.omdbapi.com/?apikey=d83bf7b4&plot=full&i=" . $imdbID);
 $filmInfo = json_decode(curl_exec($curl));
 ?>
 
@@ -63,8 +63,8 @@ $filmInfo = json_decode(curl_exec($curl));
 				?>
 				<!-- row -->
 		</div>
-		
-		
+
+
 			<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
 			<script type="text/javascript" src="js/bootstrap.min.js"></script>
 			<!-- My JS -->
